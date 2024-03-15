@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Invoice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Ecommerce.css">
+</head>
+<body>
+
+<div class=" mt-5">
+    <div class="card p-4">
+        <h1 class="text-center mb-4">Ecommerce Invoice</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="stockItems">Stock Item:</label>
+                <input type="text" class="form-control w-25" id="stockItems"/>
+            </div>
+            <div class="form-group">
+                <label for="img">Image:</label>
+                <input type="file" class="form-control w-25" id="img"/>
+            </div>
+            <div class="">
+                <label for="quantity">Quantity:</label>
+                <input type="text" class="form-control w-25" id="quantity"/>
+            </div>
+            <div class="form-group">
+                <label for="rate">Rate:</label>
+                <input type="text" class="form-control w-25" id="rate"/>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" readonly class="form-control w-25" id="amount"/>
+            </div>
+            <div class="text-center">
+                <input type="button" class="btn btn-success" value="Generate Invoice" id="btn"/>
+            </div>
+        </form>
+        <table class="table mt-4">
+            <thead class="thead">
+                <tr>
+                    <th>Stock Item</th>
+                    <th>Image</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tableid">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
